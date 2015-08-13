@@ -4,7 +4,7 @@
 // @description    Disables reverse translations when using Memrise
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/review/*
-// @version        0.1.0
+// @version        0.1.1
 // @updateURL      https://github.com/cooljingle/memrise-no-reverse-translations/raw/master/Memrise_No_Reverse_Translations.user.js
 // @downloadURL    https://github.com/cooljingle/memrise-no-reverse-translations/raw/master/Memrise_No_Reverse_Translations.user.js
 // @grant          none
@@ -25,7 +25,7 @@ $(document).ready(function() {
             var cached_function = MEMRISE.garden.session.box_factory.make;
             return function() {         
                 var result = cached_function.apply(this, arguments);
-                arguments[0].forwards = true;
+                result.forwards = true;
                 return result;
             };
         }());
