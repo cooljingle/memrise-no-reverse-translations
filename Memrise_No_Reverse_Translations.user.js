@@ -4,6 +4,8 @@
 // @description    Disables reverse translations when using Memrise
 // @match          https://www.memrise.com/course/*/garden/*
 // @match          https://www.memrise.com/garden/review/*
+// @match          https://app.memrise.com/course/*/garden/*
+// @match          https://app.memrise.com/garden/review/*
 // @version        0.1.4
 // @updateURL      https://github.com/cooljingle/memrise-no-reverse-translations/raw/master/Memrise_No_Reverse_Translations.user.js
 // @downloadURL    https://github.com/cooljingle/memrise-no-reverse-translations/raw/master/Memrise_No_Reverse_Translations.user.js
